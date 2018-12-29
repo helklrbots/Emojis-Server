@@ -1241,7 +1241,7 @@ message.channel.send("**Morroco .,  :credit_card: balance is** `$32829136`**.**"
 
 
 
-const bannedwords = [
+var bannedwords = [
     "#credits"
 
   ];
