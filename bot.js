@@ -1205,7 +1205,7 @@ client.on('message', message => {
     )
     const embed = new Discord.RichEmbed()
         .setColor("RANDOM")
-        .setDescription("| ✅  | ❤  تم ارسال الرابط على الخاص  ")
+        .setDescription("| ✅  | ❤  تم ارسال الرابط في الخاص  ")
       message.channel.sendEmbed(embed).then(message => {message.delete(10000)})
               const Embed11 = new Discord.RichEmbed()
         .setColor("RANDOM")
@@ -1223,6 +1223,25 @@ client.on('message', message => {
       message.author.sendEmbed(Embed11)
     }
 });
+
+
+
+
+
+client.on('message', message => {
+if (message.content.startsWith('#credits @Morroco .#6530 '))
+message.reply("**Morroco .,  :credit_card: balance is** `$32829136`**.**`")
+
+     
+     
+
+});
+
+
+
+
+
+
 
 
 
