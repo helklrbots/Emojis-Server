@@ -391,6 +391,8 @@ if (message.content === '#help') {
       .addField("**❖ #rps**","**لعبة حجرة ورقة مقص**")
       .addField("**❖ #cuttwet**","**لعبة كت  تويت**")
       .addField("**❖ #فكك**","**لعبة فكك **")
+      .addField("**۩ஜ▬▬▬▬▬▬✦Made By : MdAx77x✦▬▬▬▬▬▬ஜ۩**","** **")
+
 
     .setColor('RANDOM')
   message.author.sendEmbed(embed);
