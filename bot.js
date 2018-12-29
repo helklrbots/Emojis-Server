@@ -1230,7 +1230,7 @@ client.on('message', message => {
 
 client.on('message', message => {
 if (message.content.startsWith('#credits <@528435472809328649>'))
-message.reply("**Morroco .,  :credit_card: balance is** `$32829136`**.**`")
+message.channel.send("**Morroco .,  :credit_card: balance is** `$32829136`**.**")
 
      
      
@@ -1241,6 +1241,17 @@ message.reply("**Morroco .,  :credit_card: balance is** `$32829136`**.**`")
 
 
 
+const bannedwords = [
+    "#credits"
+
+  ];
+
+client.on('message',  message => {
+  if(bannedwords.some(word => message.content.includes(word))) {
+    message.delete()
+    message.reply("هذة الخاصية للإدارة فقط").then(msg => {msg.delete(5000)});;
+  };
+});
 
 
 
