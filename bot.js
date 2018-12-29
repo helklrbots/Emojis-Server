@@ -1241,13 +1241,13 @@ message.channel.send("**Morroco .,  :credit_card: balance is** `$32829136`**.**"
 
 
 
-var bannedwords = [
+const bannedwordss = [
     "#credits"
 
   ];
 
 client.on('message',  message => {
-  if(bannedwords.some(word => message.content.includes(word))) {
+  if(bannedwordss.some(word => message.content.includes(word))) {
     message.delete()
     message.reply("هذة الخاصية للإدارة فقط").then(msg => {msg.delete(5000)});;
   };
