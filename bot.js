@@ -1043,9 +1043,8 @@ client.on('message', msg => {
     
   })
 
-
 client.on("message", message => {
-    var prefix = "#";
+    var prefix = "$";
     const command = message.content.split(" ")[0];
 
     if(command == prefix+"kv"){
