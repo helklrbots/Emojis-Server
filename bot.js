@@ -1229,7 +1229,7 @@ client.on('message', message => {
 
 
 client.on('message', message => {
-if (message.content.startsWith('#credits @Morroco .#6530 '))
+if (message.content.startsWith('#credits <@528435472809328649>'))
 message.reply("**Morroco .,  :credit_card: balance is** `$32829136`**.**`")
 
      
