@@ -273,7 +273,7 @@ if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply(' **__
                message.reply("**__تم تقفيل الشات__ :white_check_mark: **")
            });
              }
-//xR1 Bot
+//Star Shop
 if (message.content.startsWith('$unmutechannel')) {
                      if(!message.channel.guild) return message.reply('** This command only for servers**');
  
@@ -593,7 +593,7 @@ embed: new Discord.RichEmbed()
          .addField('``My Prefix``' , `[ $ ]` , true)
          .addField('``My Language``' , `[ JavaScript ]` , true)
          .addField('``Bot Version``' , `[ v0.1 ]` , true)
-         .setFooter('By | <@! - Mdax .#0518 >')
+         .setFooter('By | <@335484868479811584>')
 })
 }
 });
@@ -703,7 +703,7 @@ client.on('message',message =>{
     if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
   if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية** `ADMINISTRATOR`' );
     let args = message.content.split(" ").join(" ").slice(2 + prefix.length);
-    let copy = "xR1 Server";
+    let copy = "Star Shop";
     let request = `Requested By ${message.author.username}`;
     if (!args) return message.reply('**يجب عليك كتابة كلمة او جملة لإرسال البرودكاست**');message.channel.send(`**هل أنت متأكد من إرسالك البرودكاست؟ \nمحتوى البرودكاست:** \` ${args}\``).then(msg => {
     msg.react('✅')
