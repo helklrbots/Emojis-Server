@@ -768,7 +768,7 @@ client.on('guildMemberAdd', Ammar=> {
     .addField(' 👤  انت رقم',`**[ ${Ammar.guild.memberCount} ]**`,true)
     .setColor('RANDOM')
     .setFooter(Ammar.guild.name, Ammar.guild.iconURL, true)
-    var channel =Ammar.guild.channels.find('name', '【welcome】') // هنا حط اسم الروم الي تبيه يكتب فيه
+    var channel =Ammar.guild.channels.find('name', 'chat') // هنا حط اسم الروم الي تبيه يكتب فيه
     if (!channel) return;
     channel.send({embed : embed});
     });
@@ -793,7 +793,7 @@ client.on('guildMemberAdd', member => {
     invites[member.guild.id] = guildInvites;
     const invite = guildInvites.find(i => ei.get(i.code).uses < i.uses);
     const inviter = client.users.get(invite.inviter.id);
-    const logChannel = member.guild.channels.find(channel => channel.name === "【welcome】");  
+    const logChannel = member.guild.channels.find(channel => channel.name === "chat");  
     logChannel.send(`Invited by: < @${inviter.tag} >`);
   });
 });
